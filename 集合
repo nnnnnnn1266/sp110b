@@ -1,0 +1,23 @@
+#構造和使用陣列
+
+a = [1,'hi', 3.14, 1, 2, [4, 5]]
+
+p a[2]           # 3.14
+p a.[](2)# 3.14
+p a.reverse      # [[4, 5], 2, 1, 3.14, 'hi', 1]
+p a.flatten.uniq # [1, 'hi', 3.14, 2, 4, 5]
+
+#構造和使用關聯陣列
+
+hash = { :water => 'wet', :fire => 'hot' }
+puts hash[:fire] # Prints:  hot
+
+hash.each_pair do |key, value| # Or:  hash.each do |key, value|
+puts "#{key} is #{value}"
+end
+
+# Prints:  water is wet
+#          fire is hot
+
+hash.delete :water # Deletes :water => 'wet'
+hash.delete_if {|k,value| value=='hot'} # Deletes :fire => 'hot'

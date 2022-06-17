@@ -141,3 +141,28 @@ void parse() {
   tokenIdx = 0;
   PROG();
 }
+
+
+//結果
+
+
+============ parse =============
+t0 = 0
+s = t0
+t1 = 1
+i = t1
+(L0)
+t2 = s
+t3 = i
+t4 = t2 + t3
+s = t4
+t5 = i
+t6 = 1
+t7 = t5 + t6
+i = t7
+t8 = i
+t9 = 10
+t10 = t8 < t9
+if not T10 goto L1
+goto L0
+(L1)

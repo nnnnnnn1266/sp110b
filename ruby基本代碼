@@ -1,0 +1,12 @@
+# Everything, including a literal, is an object, so this works:
+-199.abs                                                # 199
+"ruby is cool".length                                   # 12
+"Rick Astley".index("c")                                # 2
+"Nice Day Isn't It?".downcase.split(//).sort.uniq.join  # " '?acdeinsty"
+
+#一些轉換
+
+puts "What's your favorite number?"
+number = gets.chomp
+outputnumber = number.to_i + 1
+puts outputnumber.to_s + ' is a bigger and better favorite number.'
